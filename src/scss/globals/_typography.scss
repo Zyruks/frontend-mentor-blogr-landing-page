@@ -109,3 +109,47 @@ h4 {
 /* ******************* *\
  ? #header typography end
 \* ******************* */
+
+/* ******************* *\
+ ? #hero typography 
+\* ******************* */
+.headings-h1 {
+  color: var(--white);
+  font-size: rem(36);
+  text-align: center;
+  @include breakpoint(large) {
+    font-size: rem(48);
+  }
+}
+
+.hero__p {
+  color: var(--white);
+  font-size: rem(18);
+  text-align: center;
+}
+
+.hero__btn {
+  font-weight: 600;
+  font-size: rem(18);
+  font-family: $secondary-font;
+}
+
+.hero__btn--bg-on {
+  color: var(--mobile-gradient-two);
+
+  &:hover {
+    color: var(--white);
+  }
+}
+
+.hero__btn--bg-off {
+  color: var(--white);
+
+  &:hover {
+    color: var(--mobile-gradient-two);
+  }
+}
+
+/* ******************* *\
+ ? #hero typography end
+\* ******************* */
