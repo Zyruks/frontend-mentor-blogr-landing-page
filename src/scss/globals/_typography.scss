@@ -38,6 +38,73 @@ h4 {
 /* ******************* *\
  ? #header typography
 \* ******************* */
+.menu__item,
+.login-area a {
+  color: var(--headings);
+  font-weight: 600;
+  font-size: rem(20);
+
+  @include breakpoint(large) {
+    color: var(--white);
+    font-family: $secondary-font;
+
+    opacity: 70%;
+
+    &:hover {
+      text-decoration: underline;
+
+      opacity: 100%;
+    }
+  }
+}
+
+.login-area a {
+  text-align: center;
+  @include breakpoint(large) {
+    text-align: end;
+  }
+}
+
+.dropdown-menu a {
+  color: var(--headings);
+  font-weight: 600;
+  font-size: rem(16);
+
+  opacity: 80%;
+
+  transition: opacity 300ms ease-in-out;
+
+  &:hover {
+    opacity: 100%;
+  }
+
+  @include breakpoint(large) {
+    color: hsl(0deg, 0%, 0%);
+    font-weight: 300;
+
+    &:hover {
+      font-weight: 600;
+    }
+  }
+}
+
+.sign-up-btn {
+  color: var(--white);
+  font-weight: 600;
+  font-size: rem(20);
+
+  &:hover {
+    color: var(--mobile-gradient-two);
+  }
+
+  @include breakpoint(large) {
+    color: var(--mobile-gradient-two);
+
+    &:hover {
+      color: var(--white);
+    }
+  }
+}
 
 /* ******************* *\
  ? #header typography end
