@@ -6,6 +6,7 @@
   gap: rem(15);
   align-items: center;
 
+  // Duplicate if browser can't render gradients.
   background: var(--mobile-gradient-one);
   background: url("../assets/images/bg-pattern-intro-mobile.svg"),
     linear-gradient(
