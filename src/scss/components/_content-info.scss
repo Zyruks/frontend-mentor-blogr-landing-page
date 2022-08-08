@@ -16,7 +16,7 @@
   @include breakpoint(large) {
     display: grid;
     grid-template-rows: rem(250) rem(250);
-    grid-template-columns: 1fr 0.8fr;
+    grid-template-columns: 1fr 1fr;
 
     padding-block-start: rem(250);
     max-inline-size: rem(1200);
