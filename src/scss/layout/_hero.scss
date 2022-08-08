@@ -5,6 +5,7 @@
   flex-direction: column;
   gap: rem(15);
   align-items: center;
+  inline-size: 100%;
 
   // Duplicate if browser can't render gradients.
   background: var(--mobile-gradient-one);
