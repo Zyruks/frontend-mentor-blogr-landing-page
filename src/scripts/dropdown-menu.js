@@ -3,35 +3,64 @@ const connectBtn = document.querySelectorAll(".js-menu-item");
 const dropdownMenus = document.querySelectorAll(".js-dropdown-menu");
 const dropdownArrow = document.querySelectorAll(".js-dropdown-arrow");
 
-dropdownMenu(0);
-dropdownMenu(1);
-dropdownMenu(2);
-
 /**
- * When the user clicks on the button, the dropdown menu will either open or close
- * @param menuNumber - The number of the menu you want to open.
+ * "When the user clicks on the button, if the dropdown menu is not open, open it and close the other
+ * two dropdown menus. If the dropdown menu is open, close it."
+ *
+ * The function takes three arguments: the active dropdown, and the two inactive dropdowns
+ * @param activeDropdown - The index of the dropdown menu that is being clicked on.
+ * @param inactiveDropdownOne - The index of the dropdown menu that is inactive.
+ * @param inactiveDropdownTwo - The dropdown menu that is inactive and will be closed if the active
+ * dropdown is clicked.
  */
-function dropdownMenu(menuNumber) {
-  connectBtn[menuNumber].addEventListener("click", () => {
+
+function dropdownMenu(
+  activeDropdown,
+  inactiveDropdownOne,
+  inactiveDropdownTwo
+) {
+  connectBtn[activeDropdown].addEventListener("click", () => {
     if (
-      dropdownMenus[menuNumber].classList.contains("open-dropdown") == false
+      dropdownMenus[activeDropdown].classList.contains("open-dropdown") == false
     ) {
-      connectBtn[menuNumber].classList.add("menu__item--active");
-      dropdownMenus[menuNumber].classList.add("dp-flex");
-      dropdownMenus[menuNumber].classList.add("open-dropdown");
-      dropdownMenus[menuNumber].classList.remove("close-dropdown");
-      dropdownArrow[menuNumber].classList.add("tf-rotate-180");
-    } else {
-      connectBtn[menuNumber].classList.remove("menu__item--active");
-      dropdownMenus[menuNumber].classList.remove("open-dropdown");
-      dropdownMenus[menuNumber].classList.add("close-dropdown");
-      dropdownArrow[menuNumber].classList.remove("tf-rotate-180");
+      connectBtn[activeDropdown].classList.add("menu__item--active");
+      dropdownMenus[activeDropdown].classList.add("dp-flex");
+      dropdownMenus[activeDropdown].classList.add("open-dropdown");
+      dropdownMenus[activeDropdown].classList.remove("close-dropdown");
+      dropdownArrow[activeDropdown].classList.add("tf-rotate-180");
+
+      connectBtn[inactiveDropdownOne].classList.remove("menu__item--active");
+      dropdownMenus[inactiveDropdownOne].classList.remove("open-dropdown");
+      dropdownMenus[inactiveDropdownOne].classList.add("close-dropdown");
+      dropdownArrow[inactiveDropdownOne].classList.remove("tf-rotate-180");
 
       setTimeout(() => {
-        dropdownMenus[menuNumber].classList.remove("dp-flex");
+        dropdownMenus[inactiveDropdownOne].classList.remove("dp-flex");
+      }, 300);
+
+      connectBtn[inactiveDropdownTwo].classList.remove("menu__item--active");
+      dropdownMenus[inactiveDropdownTwo].classList.remove("open-dropdown");
+      dropdownMenus[inactiveDropdownTwo].classList.add("close-dropdown");
+      dropdownArrow[inactiveDropdownTwo].classList.remove("tf-rotate-180");
+
+      setTimeout(() => {
+        dropdownMenus[inactiveDropdownTwo].classList.remove("dp-flex");
+      }, 300);
+    } else {
+      connectBtn[activeDropdown].classList.remove("menu__item--active");
+      dropdownMenus[activeDropdown].classList.remove("open-dropdown");
+      dropdownMenus[activeDropdown].classList.add("close-dropdown");
+      dropdownArrow[activeDropdown].classList.remove("tf-rotate-180");
+
+      setTimeout(() => {
+        dropdownMenus[activeDropdown].classList.remove("dp-flex");
       }, 400);
     }
   });
 }
+
+dropdownMenu(0, 1, 2); // Open Product Dropdown and close company and connect dropdown
+dropdownMenu(1, 0, 2); // Open Company Dropdown and close product and connect
+dropdownMenu(2, 1, 0); // Open Connect Dropdown and close product and company
 
 /* Dropdown menu end */
