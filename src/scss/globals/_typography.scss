@@ -36,6 +36,45 @@ h4 {
 }
 
 /* ******************* *\
+ ? #component typography
+\* ******************* */
+
+.btn {
+  color: var(--mobile-gradient-two);
+  font-weight: 600;
+  font-size: rem(20);
+
+  &:hover {
+    color: var(--white);
+  }
+}
+
+.btn--inverted {
+  color: var(--white);
+
+  &:hover {
+    color: var(--mobile-gradient-two);
+  }
+}
+
+.btn--sign-up {
+  @include breakpoint-down(medium) {
+    color: var(--white);
+
+    &:hover {
+      color: var(--mobile-gradient-two);
+    }
+  }
+  @include breakpoint(large) {
+    color: var(--mobile-gradient-two);
+  }
+}
+
+/* ******************* *\
+ ? #component typography end
+\* ******************* */
+
+/* ******************* *\
  ? #header typography
 \* ******************* */
 .menu__item,
@@ -88,24 +127,6 @@ h4 {
   }
 }
 
-.sign-up-btn {
-  color: var(--white);
-  font-weight: 600;
-  font-size: rem(20);
-
-  &:hover {
-    color: var(--mobile-gradient-two);
-  }
-
-  @include breakpoint(large) {
-    color: var(--mobile-gradient-two);
-
-    &:hover {
-      color: var(--white);
-    }
-  }
-}
-
 /* ******************* *\
  ? #header typography end
 \* ******************* */
@@ -126,28 +147,6 @@ h4 {
   color: var(--white);
   font-size: rem(18);
   text-align: center;
-}
-
-.hero__btn {
-  font-weight: 600;
-  font-size: rem(18);
-  font-family: $secondary-font;
-}
-
-.hero__btn--bg-on {
-  color: var(--mobile-gradient-two);
-
-  &:hover {
-    color: var(--white);
-  }
-}
-
-.hero__btn--bg-off {
-  color: var(--white);
-
-  &:hover {
-    color: var(--mobile-gradient-two);
-  }
 }
 
 /* ******************* *\

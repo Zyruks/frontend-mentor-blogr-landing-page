@@ -201,43 +201,6 @@
   inline-size: rem(50);
 }
 
-.sign-up-btn {
-  border: rem(2) solid var(--white);
-  border-radius: rem(40);
-
-  background: linear-gradient(
-    90deg,
-    var(--mobile-gradient-one) 0%,
-    var(--mobile-gradient-two) 100%
-  );
-
-  transition: border 400ms ease-in-out, background 400ms ease-in-out,
-    color 200ms ease-in-out;
-
-  padding-inline: rem(40);
-  padding-block: rem(15);
-
-  &:hover {
-    border: rem(2) solid var(--mobile-gradient-two);
-
-    background: var(--white);
-  }
-
-  @include breakpoint(large) {
-    background: var(--white);
-    padding-inline: rem(15);
-    padding-block: rem(10);
-
-    min-inline-size: rem(150);
-
-    &:hover {
-      border: rem(2) solid rgba(0, 0, 0, 0%);
-
-      background: rgba(255, 255, 255, 30%);
-    }
-  }
-}
-
 /* ******************* *\
 #Nav Bar End
 \* ******************* */
