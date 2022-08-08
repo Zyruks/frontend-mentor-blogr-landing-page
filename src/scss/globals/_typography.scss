@@ -200,9 +200,40 @@ h4 {
  ? #content-info typography end
 \* ******************* */
 
+/* ******************* *\
+ ? #infrastructure-section  typography end
+\* ******************* */
+
 .infrastructure-section {
   & .headings-h2,
   & .descriptions {
     color: var(--white);
   }
 }
+
+/* ******************* *\
+ ? #infrastructure-section  typography end
+\* ******************* */
+
+/* ******************* *\
+ ? #footer typography 
+\* ******************* */
+.headings-h4 {
+  font-weight: 700;
+  font-family: $secondary-font;
+}
+
+.footer-nav li {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.footer-division {
+  color: var(--white);
+  text-align: center;
+}
+
+/* ******************* *\
+ ? #footer typography end
+\* ******************* */
