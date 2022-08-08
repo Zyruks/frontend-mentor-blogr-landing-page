@@ -18,6 +18,8 @@ html {
 body {
   margin: 0;
   padding: 0;
+
+  background-color: var(--white);
 }
 
 li {
@@ -33,4 +35,25 @@ picture {
   display: block;
 
   line-height: 0;
+}
+
+/* part of frontend mentor Challenge identifier */
+.attribution {
+  position: absolute;
+
+  inline-size: 100%;
+
+  color: var(--white);
+  text-align: center;
+  inset-block-end: rem(10);
+
+  & a {
+    color: var(--cta-text);
+
+    transition: color 300ms ease-in-out;
+
+    &:hover {
+      color: var(--hover-bg);
+    }
+  }
 }
