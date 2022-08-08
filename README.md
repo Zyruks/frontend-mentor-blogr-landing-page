@@ -38,7 +38,7 @@ Additional i added some animations.
 - Solution URL: [Github](https://github.com/Zyruks/frontend-mentor-blogr-landing-page)
 - Live Site URL: [Vercel](https://frontend-mentor-blogr-landing-page-git-main-zyruks.vercel.app/)
 
-* - I need to update Links
+
 
 ## My process
 
