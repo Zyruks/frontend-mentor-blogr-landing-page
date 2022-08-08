@@ -108,7 +108,7 @@
     padding-inline-start: rem(36);
   }
   @include breakpoint(x-large) {
-    gap: rem(50);
+    gap: rem(60);
   }
 }
 
@@ -152,21 +152,21 @@
 
 .dropdown-menu--product {
   @include breakpoint(large) {
-    inset-inline-start: rem(140);
-    inline-size: rem(110);
+    inset-inline-start: rem(135);
+    inline-size: rem(150);
   }
 }
 
 .dropdown-menu--company {
   @include breakpoint(large) {
-    inset-inline-start: rem(280);
+    inset-inline-start: rem(290);
     inline-size: rem(140);
   }
 }
 
 .dropdown-menu--connect {
   @include breakpoint(large) {
-    inset-inline-start: rem(430);
+    inset-inline-start: rem(455);
     inline-size: rem(150);
   }
 }
