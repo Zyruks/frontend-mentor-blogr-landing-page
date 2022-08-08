@@ -153,21 +153,21 @@
 .dropdown-menu--product {
   @include breakpoint(large) {
     inset-inline-start: rem(135);
-    inline-size: rem(150);
+    inline-size: rem(180);
   }
 }
 
 .dropdown-menu--company {
   @include breakpoint(large) {
     inset-inline-start: rem(290);
-    inline-size: rem(140);
+    inline-size: rem(180);
   }
 }
 
 .dropdown-menu--connect {
   @include breakpoint(large) {
-    inset-inline-start: rem(455);
-    inline-size: rem(150);
+    inset-inline-start: rem(458);
+    inline-size: rem(180);
   }
 }
 
