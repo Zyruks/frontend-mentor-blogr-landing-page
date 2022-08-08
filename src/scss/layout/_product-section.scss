@@ -7,15 +7,15 @@
     grid-column: 2 / -1;
     align-self: flex-start;
 
-    transform: translateX(rem(20)) translateY(rem(80));
+    transform: translateX(rem(80)) translateY(rem(80));
   }
 
   @include breakpoint(x-large) {
-    transform: translateX(rem(20)) translateY(rem(90));
+    transform: translateX(rem(80)) translateY(rem(90));
   }
 }
 
-.content-block--first-block {
+.product-section .content-block--first-block {
   @include breakpoint(large) {
     grid-row: 1/ 2;
     grid-column: 1 / 2;
@@ -23,7 +23,7 @@
   }
 }
 
-.content-block--second-block {
+.product-section .content-block--second-block {
   @include breakpoint(large) {
     grid-row: 2/ -1;
     grid-column: 1 / 2;

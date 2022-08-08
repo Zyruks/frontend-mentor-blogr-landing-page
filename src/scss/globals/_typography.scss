@@ -188,7 +188,6 @@ h4 {
   line-height: 1.6;
   text-align: center;
   @include breakpoint(large) {
-    line-height: 2;
     letter-spacing: rem(0.5);
     text-align: start;
   }
