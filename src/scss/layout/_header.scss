@@ -1,7 +1,7 @@
 @use "../abstract" as *;
 
 /* ******************* *\
-#Nav Bar
+? #header 
 \* ******************* */
 .header {
   position: absolute;
@@ -78,7 +78,9 @@
   }
 }
 
-/* added to HTML with Js */
+/* ****************
+* added to HTML with Js 
+****************** */
 .nav--active {
   opacity: 100%;
 }
@@ -93,7 +95,9 @@
   }
 }
 
-/* added to HTML with Js end */
+/* ****************
+* added to HTML with Js end
+****************** */
 
 .menu {
   display: flex;
@@ -123,7 +127,9 @@
   transition: opacity 300ms ease-in-out;
 }
 
-/* Dropdown Style */
+/* ****************
+* Dropdown Style
+****************** */
 .dropdown-menu {
   display: none;
   flex-direction: column;
@@ -171,7 +177,9 @@
   }
 }
 
-/* Dropdown Style end */
+/* ****************
+* dropdown style end
+****************** */
 
 .login-area {
   display: flex;
@@ -202,5 +210,5 @@
 }
 
 /* ******************* *\
-#Nav Bar End
+? #header end
 \* ******************* */

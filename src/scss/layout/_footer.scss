@@ -1,5 +1,9 @@
 @use "../abstract/" as *;
 
+/* ******************* *\
+? #footer 
+\* ******************* */
+
 .footer {
   position: relative;
 
@@ -50,22 +54,6 @@
   inline-size: 100%;
 }
 
-.attribution {
-  position: absolute;
-
-  inline-size: 100%;
-
-  color: white;
-  text-align: center;
-  inset-block-end: rem(10);
-
-  & a {
-    color: var(--cta-text);
-
-    transition: color 300ms ease-in-out;
-
-    &:hover {
-      color: var(--hover-bg);
-    }
-  }
-}
+/* ******************* *\
+? #footer end
+\* ******************* */

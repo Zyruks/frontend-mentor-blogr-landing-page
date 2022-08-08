@@ -1,5 +1,9 @@
 @use "../abstract/" as *;
 
+/* ******************* *\
+? #hero 
+\* ******************* */
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -7,8 +11,8 @@
   align-items: center;
   inline-size: 100%;
 
-  // Duplicate if browser can't render gradients.
-  background: var(--mobile-gradient-one);
+  // * Duplicate if browser can't render gradients.
+  background: var(--cta-text);
   background: url("../assets/images/bg-pattern-intro-mobile.svg"),
     linear-gradient(
       140deg,
@@ -58,3 +62,7 @@
   margin-block-start: rem(40);
   inline-size: 100%;
 }
+
+/* ******************* *\
+? #hero end
+\* ******************* */

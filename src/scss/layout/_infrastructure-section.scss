@@ -1,5 +1,8 @@
 @use "../abstract/" as *;
 
+/* ******************* *\
+? #infrastructure section
+\* ******************* */
 .infrastructure-section {
   border-radius: rem(0) rem(80);
 
@@ -85,3 +88,7 @@
   align-items: center;
   justify-content: center;
 }
+
+/* ******************* *\
+? #infrastructure section end
+\* ******************* */

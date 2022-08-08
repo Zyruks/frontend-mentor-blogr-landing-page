@@ -1,5 +1,8 @@
 @use "../abstract/" as *;
 
+/* ******************* *\
+? #btn component
+\* ******************* */
 .btn {
   border: rem(2) solid var(--white);
   border-radius: rem(40);
@@ -43,7 +46,7 @@
     );
 
     &:hover {
-      border: rem(2) solid var(--mobile-gradient-two);
+      border: rem(2) solid var(--cta-text);
     }
   }
 
@@ -51,3 +54,7 @@
     background: var(--white);
   }
 }
+
+/* ******************* *\
+? #btn component end
+\* ******************* */

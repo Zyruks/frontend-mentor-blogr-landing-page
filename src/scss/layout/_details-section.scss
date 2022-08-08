@@ -1,6 +1,8 @@
 @use "../abstract/" as *;
 
-/* details section */
+/* ******************* *\
+? #details section 
+\* ******************* */
 .details-section .content-info__img {
   @include breakpoint(large) {
     grid-row: 1 / 2;
@@ -31,4 +33,6 @@
   }
 }
 
-/* product section end */
+/* ******************* *\
+? #details section end
+\* ******************* */
